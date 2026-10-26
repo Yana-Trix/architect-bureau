@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Catalog Website for an Architectural Bureau</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="logo" href="#">ARCHΛ</a>
+  <input type="checkbox" id="burger" hidden>
+  <label for="burger" class="burger" aria-label="Menu">☰</label>
+  <nav>
+    <ul>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#philosophy">Philosophy</a></li>
+      <li><a href="#contacts">Contacts</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <h1>Designing Space for Living</h1>
+    <a class="cta" href="#projects">View portfolio</a>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <article class="card card--big">
+      <h3>Villa Nord</h3>
+      <p>Area: 420 m²</p>
+      <p>Year: 2023</p>
+      <p>Location: Almaty, KZ</p>
+    </article>
+    <article class="card">
+      <h3>City Library</h3>
+      <p>Area: 1800 m²</p>
+      <p>Year: 2021</p>
+      <p>Location: Astana, KZ</p>
+    </article>
+    <article class="card">
+      <h3>Lake House</h3>
+      <p>Area: 160 m²</p>
+      <p>Year: 2024</p>
+      <p>Location: Issyk, KZ</p>
+    </article>
+    <article class="card card--wide">
+      <h3>Office Hub</h3>
+      <p>Area: 3200 m²</p>
+      <p>Year: 2022</p>
+      <p>Location: Almaty, KZ</p>
+    </article>
+  </section>
+
+  <section id="services">
+    <h2>Services</h2>
+    <p>Surveying, concept design, working drawings, author supervision.</p>
+  </section>
+
+  <section id="philosophy">
+    <h2>Philosophy</h2>
+    <p>Space should serve the people who live in it.</p>
+  </section>
+
+  <section id="contacts" class="contacts">
+    <h2>Project requirements</h2>
+    <form action="#" method="post">
+      <label>Name
+        <input type="text" name="name" required minlength="2">
+      </label>
+      <label>Phone
+        <input type="tel" name="phone" required placeholder="+7 700 000 00 00">
+      </label>
+      <label>Email
+        <input type="email" name="email" required>
+      </label>
+      <label>Building Area (m²)index.html
+        <input type="number" name="area" required min="1">
+      </label>
+      <label>Budget Constraints
+        <input type="text" name="budget" required>
+      </label>
+      <button type="submit">Send request</button>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <nav>
+    <a href="#projects">Projects</a>
+    <a href="#services">Services</a>
+    <a href="#contacts">Contacts</a>
+  </nav>
+  <p>License No. 12345, registered 2015. Chamber of Architects certificate.</p>
+  <p>
+    <a href="#">Modern Housing, 2022</a> ·
+    <a href="#">Journal of Architecture, 2023</a>
+  </p>
+  <label class="theme-switch">
+    <input type="checkbox" id="theme"> Dark theme
+  </label>
+</footer>
+
+</body>
+</html>
